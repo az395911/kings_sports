@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sports Recommendation Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="King_s logo.png" alt="King's College Logo" width="120">
+
+    <h1>Sports Recommendation Quiz</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Sports Recommendation</a>
+    </nav>
+</header>
+
+<hr>
+
+<p>Please answer the questions below to find a sport that may suit you.</p>
+
+<div class="sport-item">
+    <h3>1. What is your energy level?</h3>
+
+    <input type="radio" name="q1" value="A"> Low energy<br>
+    <input type="radio" name="q1" value="B"> Medium energy<br>
+    <input type="radio" name="q1" value="C"> High energy<br>
+</div>
+
+<div class="sport-item">
+    <h3>2. Do you enjoy team sports?</h3>
+
+    <input type="radio" name="q2" value="C"> Yes<br>
+    <input type="radio" name="q2" value="B"> Sometimes<br>
+    <input type="radio" name="q2" value="A"> No<br>
+</div>
+
+<div class="sport-item">
+    <h3>3. Which activity do you prefer?</h3>
+
+    <input type="radio" name="q3" value="A"> Indoor sports<br>
+    <input type="radio" name="q3" value="B"> Outdoor sports<br>
+    <input type="radio" name="q3" value="C"> Water sports<br>
+</div>
+
+<div class="sport-item">
+    <h3>4. How competitive are you?</h3>
+
+    <input type="radio" name="q4" value="A"> Not competitive<br>
+    <input type="radio" name="q4" value="B"> Sometimes competitive<br>
+    <input type="radio" name="q4" value="C"> Very competitive<br>
+</div>
+
+<div class="sport-item">
+    <h3>5. How often do you exercise?</h3>
+
+    <input type="radio" name="q5" value="A"> Rarely<br>
+    <input type="radio" name="q5" value="B"> Sometimes<br>
+    <input type="radio" name="q5" value="C"> Regularly<br>
+</div>
+
+<br>
+
+<button onclick="calculateResult()">Submit Quiz</button>
+
+<div id="tip" style="display:none; color:red; margin-top:20px;">
+    Please answer all questions before submitting.
+</div>
+
+<div id="result-section" style="display:none; margin-top:20px;">
+    <h2>Your Result</h2>
+    <div id="recommendation-text"></div>
+</div>
+
+<hr>
+
+<h2>Possible Sports Recommendations</h2>
+
+<ul>
+    <li>Tennis</li>
+    <li>Swimming</li>
+    <li>Basketball</li>
+    <li>Golf</li>
+    <li>Rugby</li>
+</ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
